@@ -1,0 +1,51 @@
+---
+stylesheets:
+  - ../../scss/index.scss
+userList:
+  - "Anton Antonov"
+  - "Sergey Sergeev"
+  - "Pavel Pavlov"
+  - "Petr"
+  - "Oleg Olegov"
+  - "Nikolay Nikolayev "
+  - "Semen Semenov"
+  - "Evgeniy Evgenjev"
+  - "Georgiy"
+  - "Meme Memememe"
+  - "Fillip Fillipov"
+  - "Fillip Pavlov"
+---
+{{!< base}}
+
+<main>
+    <div class="chat-form">
+        <div class="chat-menu">
+            <a href="../settings/index.hbs" class="chat-menu__owner-settings">Artyom Niko</a>
+            <div class="chat-menu__list">
+                {{#each userList}}
+                    <div class="chat-item">
+                        <div class="chat-item__picture"></div>
+                        {{> chatitem
+                            className="chat-item__text"
+                            className_user="chat-item__text_name-style"
+                            className_preview="chat-item__text_preview-style"
+                            text_user=this
+                        }}
+                        <div class="chat-item__msgcounter">1</div>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+        <div class="chat-area">
+            <div class="chat-area__header">
+                <div class="chat-area__header-username">Sergey Sergeev</div>
+                <div class="chat-area__header-last-seen">last seen recently</div>
+            </div>
+            <div class="chat-area__content"></div>
+            <div class="chat-area__footer">
+                <textarea class="input__message-input" placeholder="Message" autofocus></textarea>
+                {{> button className="button__send-message" btnText="^" }}
+            </div>
+        </div>
+    </div>
+</main>
