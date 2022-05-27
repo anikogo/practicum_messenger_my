@@ -2,6 +2,8 @@ $dark-color: rgba(0,0,0,0.75);
 $light-color: rgba(0,0,0,0.35);
 $ultralight-color: rgba(0,0,0,0.15);
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
 @mixin flexColumn {
     display: flex;
     flex-direction: column;
@@ -46,7 +48,7 @@ h1 {
 }
 
 * {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .data-entry-field {

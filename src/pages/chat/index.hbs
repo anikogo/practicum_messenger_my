@@ -20,7 +20,10 @@ userList:
 <main>
     <div class="chat-form">
         <div class="chat-menu">
-            <a href="../settings/index.hbs" class="chat-menu__owner-settings">Artyom Niko</a>
+            <div class="chat-menu__owner">
+                <div>Artyom Niko</div>
+                <div><a class="chat-menu__owner-settings" href="../settings/index.hbs">{{> cog}}</a></div>
+            </div>
             <div class="chat-menu__list">
                 {{#each userList}}
                     <div class="chat-item">
