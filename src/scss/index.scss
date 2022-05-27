@@ -2,7 +2,7 @@ $dark-color: rgba(0,0,0,0.75);
 $light-color: rgba(0,0,0,0.35);
 $ultralight-color: rgba(0,0,0,0.15);
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
 @mixin flexColumn {
     display: flex;
@@ -74,6 +74,26 @@ h1 {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
+
+.thin-font {
+    color: $light-color;
+    font-size: 15;
+    font-weight: 300;
+}
+
+.medium-font {
+    color: $dark-color;
+    font-size: 15;
+    font-weight: 500;
+}
+
+.medium-font-18 {
+    color: $dark-color;
+    font-size: 18;
+    font-weight: 500;
+}
+
+
 
 @import "_forms.scss";
 @import "_chat.scss";

@@ -76,12 +76,6 @@
     color: $dark-color;
 }
 
-.input__column-container {
-    // @include flexColumn;
-    // flex-wrap: wrap;
-    flex-grow: 1;
-}
-
 .input__main-input {
     @include bottomBorder;
     color: $dark-color;
