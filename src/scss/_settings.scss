@@ -9,6 +9,10 @@
     margin-right: 25px;
 }
 
+.input__settings-name-container {
+    flex-grow: 1;
+}
+
 .settings {
     &__user-container {
         @include flexRow;
