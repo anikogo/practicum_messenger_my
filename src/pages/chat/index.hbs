@@ -22,19 +22,19 @@ userList:
         <div class="chat-menu">
             <div class="chat-menu__owner">
                 <div>Artyom Niko</div>
-                <div><a class="chat-menu__owner-settings" href="../settings/index.hbs">{{> cog}}</a></div>
+                <div><a class="chat-menu__owner-settings" href="../settings/index.hbs">{{> cogicon}}</a></div>
             </div>
             <div class="chat-menu__list">
                 {{#each userList}}
                     <div class="chat-item">
-                        <div class="chat-item__picture"></div>
+                        <div class="chat-item__picture rounding"></div>
                         {{> chatitem
                             className="chat-item__text"
                             className_user="chat-item__text_name-style"
                             className_preview="chat-item__text_preview-style"
                             text_user=this
                         }}
-                        <div class="chat-item__msgcounter">1</div>
+                        <div class="chat-item__msgcounter rounding">1</div>
                     </div>
                 {{/each}}
             </div>
@@ -46,8 +46,8 @@ userList:
             </div>
             <div class="chat-area__content"></div>
             <div class="chat-area__footer">
-                <textarea class="input__message-input" placeholder="Message" autofocus></textarea>
-                {{> button className="button__send-message" btnText="^" }}
+                <textarea class="input__message-input left-rounding" placeholder="Message" autofocus></textarea>
+                {{> button className="button__send-message right-rounding" btnText="^"}}
             </div>
         </div>
     </div>

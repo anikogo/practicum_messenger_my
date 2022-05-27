@@ -62,7 +62,9 @@
     font-size: 40;
     width: 60px;
     height: 60px;
-    margin: auto;
+    margin-top: 19px;
+    margin-left: 0px;
+    margin-right: auto;
     line-height: 60px;
 }
 
@@ -96,10 +98,12 @@
 
 .input__message-input {
     @include styleBorder;
+    box-sizing: border-box;
     outline: 0;
     width: 80%;
     height: 60px;
-    margin: auto;
+    margin-left: auto;
+    margin-top: 19px;
     resize: none;
     font-size: 15;
 }

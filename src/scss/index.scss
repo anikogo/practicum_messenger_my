@@ -61,6 +61,20 @@ h1 {
     color: $light-color;
   }
 
+.rounding {
+    border-radius: 5px;
+}
+
+.right-rounding {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.left-rounding {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
 @import "_forms.scss";
 @import "_chat.scss";
 @import "_settings.scss";
